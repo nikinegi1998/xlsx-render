@@ -1,0 +1,46 @@
+<%- include('./header.ejs') %>
+
+
+    <div>
+        <h1 class="text-center fst-italic mt-5">Data </h1>
+
+        <table class="table mt-4 table-bordered">
+
+            <thead class="table-secondary">
+                <tr>
+                    <% for(let key in headers){ %>
+                        <th>
+                            <%= key %>
+                        </th>
+                        <% } %>
+                            <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i=1; i<data.length; i++){ %>
+                    <tr>
+                        <% for(let key in headers){ %>
+                            <td>
+                                <%= data[i][key] %>
+                            </td>
+                            <% } %>
+                                <td>
+                                    <a type="button" href="/edit?value=<%=i%>" class="btn btn-sm btn-warning">Edit</a>
+                                </td>
+                    </tr>
+                    <% } %>
+            </tbody>
+        </table>
+
+        <br>
+        <p>Add new record <a type="button" href="/edit" class="btn btn-sm btn-success">Add</a></p>
+    </div>
+
+    <a class="btn btn-success" type="button" href="/save">Save</a>
+
+    <!-- <script>
+        function displayEditModal(data, i, headers, editModal) {
+            editModal = true
+        }
+    </script> -->
+    <%- include('./footer.ejs') %>

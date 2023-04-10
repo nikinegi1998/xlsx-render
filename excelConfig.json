@@ -1,0 +1,95 @@
+{
+    "TestCase_ID":{
+        "type":"Dropdown",
+        "List_values":["WF01_TC01", "WF02_Door_TC01", "WF02_Window_TC02", "WF03_TC01", "WF04_TC01", "WF05_TC01", "WF06_TC01", "WF07_Door_TC01", "WF07_Window_TC02", "WF08_TC01", "WF10_TC01", "WF11_TC01", "WF13_Door_TC01", "WF13_Window_TC02", "WF14_TC01"],
+        "label":"Naveen",
+        "isMandatory":"yes"
+    },
+    "Test_Case_Title":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Execution":{
+        "type":"Dropdown",
+        "List_values":["YES","NO"],
+        "isMandatory":"yes"
+    },
+    "Environment":{
+        "type":"Dropdown",
+        "List_values":["BTST","GRISUP","KLASUP"],
+        "isMandatory":"yes"
+
+    },
+    "Database":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Scenario_ID":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Databasenumber":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Entity":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 1":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 2":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 3":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 4":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 5":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 6":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 7":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 8":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 9":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 10":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 11":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 12":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Variable 13":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    },
+    "Expected_Result":{
+        "type":"Textbox",
+        "isMandatory":"no"
+    }
+}

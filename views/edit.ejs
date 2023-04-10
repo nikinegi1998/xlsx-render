@@ -1,0 +1,45 @@
+<%- include('./header.ejs') %>
+
+    <div>
+
+        <h2 class="fst-italic text-center mt-5">Edit Record</h2>
+        <div class="card w-50 mx-auto mt-3">
+
+                <form class="form mt-3 p-3" action="/form?value=<%=val%>" method="post">
+                    <% for(let i in headers) {%>
+                        <label>
+                           <b> <%= i %> : </b>
+                        </label>
+                        <% if(headers[i].type==='Dropdown' ){ %>
+    
+                            <select class="form-control mt-2 dropdown-toggle" name="<%= i%>" id="">
+                               
+                                <% for(let j=0; j<headers[i].List_values.length; j++){ %>
+                                    <option value="<%= headers[i].List_values[j] %>"
+                                        [selected]="<% headers[i].List_values[j] === data[i]  %>">
+                                        <%= headers[i].List_values[j] %>
+                                    </option>
+                                    <% } %>
+                            </select>
+    
+                        <% } %>
+    
+                        <% if(headers[i].type==='Textbox' ){ %>
+    
+                            <input class="form-control mt-2" type="text" name="<%= i %>" id="" value="<%= data[i]  %>">
+    
+                        <% } %>
+                    <% } %>
+    
+                    <button class=" mt-2 btn btn-sm btn-success" type="submit">Save </button>
+                    <a class=" mt-2 btn btn-sm btn-primary" type="button" href="/upload" id="close">Close </a>
+                </form>
+           
+
+
+
+             
+        </div>
+    </div>
+
+    <%- include('./footer.ejs') %>
